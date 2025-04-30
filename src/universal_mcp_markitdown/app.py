@@ -34,7 +34,7 @@ class MarkitdownApp(BaseApplication):
             ConnectionError: If the URI cannot be accessed or content cannot be retrieved
 
         Tags:
-            convert, markdown, async, uri, transform, document
+            convert, markdown, async, uri, transform, document, important
         """
         return self.markitdown.convert_uri(uri).markdown
 

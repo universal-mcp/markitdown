@@ -1,30 +1,87 @@
+# Universal Mcp Markitdown MCP Server
 
-# Markitdown MCP Server
+An MCP Server for the Universal Mcp Markitdown API.
 
-An MCP Server for the Markitdown API.
+## 📋 Prerequisites
 
-## Tools
+Before you begin, ensure you have met the following requirements:
+* Python 3.11+ (Recommended)
+* [uv](https://github.com/astral-sh/uv) installed globally (`pip install uv`)
 
-This is automatically generated from OpenAPI schema for the Markitdown API.
+## 🛠️ Setup Instructions
 
-## Supported Integrations
+Follow these steps to get the development environment up and running:
 
-This tool can be integrated with any service that supports HTTP requests.
+### 1. Sync Project Dependencies
+Navigate to the project root directory (where `pyproject.toml` is located).
+```bash
+uv sync
+```
+This command uses `uv` to install all dependencies listed in `pyproject.toml` into a virtual environment (`.venv`) located in the project root.
 
-## Tool List
+### 2. Activate the Virtual Environment
+Activating the virtual environment ensures that you are using the project's specific dependencies and Python interpreter.
+- On **Linux/macOS**:
+```bash
+source .venv/bin/activate
+```
+- On **Windows**:
+```bash
+.venv\\Scripts\\activate
+```
+
+### 3. Start the MCP Inspector
+Use the MCP CLI to start the application in development mode.
+```bash
+mcp dev src/universal_mcp_markitdown/mcp.py
+```
+The MCP inspector should now be running. Check the console output for the exact address and port.
+
+## 🔌 Supported Integrations
+
+- AgentR
+- API Key (Coming Soon)
+- OAuth (Coming Soon)
+
+## 🛠️ Tool List
+
+This is automatically generated from OpenAPI schema for the Universal Mcp Markitdown API.
 
 | Tool | Description |
 |------|-------------|
-| convert_to_markdown | Asynchronously converts a URI to markdown format using the markitdown converter. |
+| `convert_to_markdown` | Asynchronously converts a URI to markdown format using the markitdown converter. |
 
+## 📁 Project Structure
+
+The generated project has a standard layout:
+```
+.
+├── src/                  # Source code directory
+│   └── universal_mcp_markitdown/
+│       ├── __init__.py
+│       └── mcp.py        # Server is launched here
+│       └── app.py        # Application tools are defined here
+├── tests/                # Directory for project tests
+├── .env                  # Environment variables (for local development)
+├── pyproject.toml        # Project dependencies managed by uv
+├── README.md             # This file
+```
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
+_This project was generated using **MCP CLI** — Happy coding! 🚀_
 
 ## Usage
 
 - Login to AgentR
 - Follow the quickstart guide to setup MCP Server for your client
-- Visit Apps Store and enable the Markitdown app
+- Visit Apps Store and enable the Universal Mcp Markitdown app
 - Restart the MCP Server
 
 ### Local Development
 
-- Follow the README to test with the local MCP Server
+- Follow the README to test with the local MCP Server 

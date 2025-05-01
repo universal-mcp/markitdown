@@ -24,9 +24,7 @@ class MarkitdownApp(BaseApplication):
                        - http:// or https:// (Web pages, feeds, APIs)
                        - file:// (Local or accessible network files)
                        - data: (Embedded data)
-                       - If no scheme is provided and the string looks like a path,
-                         'file://' is automatically prepended.
-
+                       
         Returns:
             A string containing the markdown representation of the content at the specified URI
 

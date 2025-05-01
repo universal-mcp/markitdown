@@ -4,6 +4,7 @@ import pytest
 
 from universal_mcp_markitdown.app import MarkitdownApp
 
+
 @pytest.fixture
 def app_instance():
     """Provides a MarkitdownApp instance for tests."""

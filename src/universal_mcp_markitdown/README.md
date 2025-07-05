@@ -1,10 +1,10 @@
-# Markitdown MCP Server
+# MarkitdownApp MCP Server
 
-An MCP Server for the Markitdown API.
+An MCP Server for the MarkitdownApp API.
 
 ## 🛠️ Tool List
 
-This is automatically generated from OpenAPI schema for the Markitdown API.
+This is automatically generated from OpenAPI schema for the MarkitdownApp API.
 
 
 | Tool | Description |

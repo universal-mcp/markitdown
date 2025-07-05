@@ -7,7 +7,7 @@ from universal_mcp.applications import BaseApplication
 class MarkitdownApp(BaseApplication):
     def __init__(self, **kwargs):
         super().__init__(name="markitdown", **kwargs)
-        self.markitdown = MarkItDown()
+        self.markitdown = MarkItDown(enable_plugins=True)
 
     async def convert_to_markdown(self, uri: str) -> str:
         """
